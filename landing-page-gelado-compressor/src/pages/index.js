@@ -26,6 +26,7 @@ export default function Home() {
               imgUrl="icons/WindowsLogo.svg"
               altText="gelado compressor windowns logo"
               buttonText="Download for Windows"
+              urlDownload="https://github.com/AbraaoMorais/lp-compressor/raw/main/statics-installers/My%20Nextron%20App%20Setup%201.1.0.exe"
             />
              <DownloadButton
               imgUrl="icons/LinuxLogo.svg"
