@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
+import DownloadButton from '../components/DownloadButon'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,19 +16,33 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-              <Image
+          <div className={styles.wrapperDownloadArea}>
+            <Image
                 src="/logo.svg"
                 alt="gelado compressor Logo"
                 className={styles.vercelLogo}
-                width={100}
-                height={24}
+                width={207}
+                height={108}
                 priority
-              />
+            />
+            <DownloadButton
+              imgUrl="icons/WindowsLogo.svg"
+              altText="gelado compressor windowns logo"
+            />
+             <DownloadButton
+              imgUrl="icons/LinuxLogo.svg"
+              altText="gelado compressor linux Logo"
+            />
+             <DownloadButton
+              imgUrl="icons/AppleLogo.svg"
+              altText="gelado compressor apple Logo"
+            />
+          </div>
                <Image
-                src="/nodebook-demo.webp"
-                alt="gelado compressor Logo"
+                src="/nodebook-demo.png"
+                alt="gelado compressor notebook"
                 className={styles.notebookImage}
-                width={745}
+                width={769}
                 height={535}
                 priority
               />
@@ -35,7 +50,7 @@ export default function Home() {
       <section>
         dadad
       </section>
-      <footer>
+      <footer className={styles.footer}>
         dada
       </footer>
     </>

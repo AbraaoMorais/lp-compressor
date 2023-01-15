@@ -2,21 +2,45 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
   min-height: 100vh;
-  background-image: url('/background-geladocompress.png');
+  background-image: url("/background-geladocompress.png");
   background-repeat:no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
 }
 
-.logo{
+.wrapperDownloadArea{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  gap: 18px;
+  padding-left:115px;
+}
+
+.logo,
+.notebookImage{
   position: relative;
 }
 
+.notebookImage{
+  width:60%;
+  height:30%;
+  top: 20px
+}
 
+.footer{
+  height: 50rem
+}
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
-  .grid {
-    grid-template-columns: repeat(2, 50%);
+  /* .notebookImage{
+    width:600px;
+    height: 400px
+  } */
+  .buttonDownload{
+    gap:1rem;
+    font-size: 10px;
   }
 }
 

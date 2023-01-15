@@ -1,0 +1,31 @@
+.buttonDownload{
+    width:24vw;
+    height:9vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:2rem;
+    background: #00324E;
+    mix-blend-mode: normal;
+    border: 1px solid #002671;
+    border-radius: 33px;
+    padding:1vh;
+  
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+    /* .notebookImage{
+      width:600px;
+      height: 400px
+    } */
+    .buttonDownload{
+      gap:1rem;
+      font-size: 10px;
+    }
+  }
