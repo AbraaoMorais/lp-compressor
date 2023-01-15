@@ -1,12 +1,20 @@
 import React from 'react'
 import styles from '../DownloadButon/index.module.scss'
 import Image from 'next/image'
+import { Inter } from '@next/font/google'
+
+const inter = Inter({ 
+    subsets: ['latin'],
+    variable: '--inter-font',
+    weight: ['100','400','900']
+})
 
 export default function index(props) {
   return (
    <>
     <button 
-        className={styles.buttonDownload}
+        // style={inter.style}
+        className={styles.buttonDownload + ' ' + inter.className}
     > 
         <Image
             src={props.imgUrl}
@@ -15,7 +23,7 @@ export default function index(props) {
             height={33}
             priority
         />
-        <span>Download for Windows</span>
+        <span>{props.buttonText || 'button name'}</span>
     </button>
    </>
   )

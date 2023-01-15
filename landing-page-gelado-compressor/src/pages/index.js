@@ -1,10 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import DownloadButton from '../components/DownloadButon'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -28,14 +25,17 @@ export default function Home() {
             <DownloadButton
               imgUrl="icons/WindowsLogo.svg"
               altText="gelado compressor windowns logo"
+              buttonText="Download for Windows"
             />
              <DownloadButton
               imgUrl="icons/LinuxLogo.svg"
               altText="gelado compressor linux Logo"
+              buttonText="Download for Linux"
             />
              <DownloadButton
               imgUrl="icons/AppleLogo.svg"
               altText="gelado compressor apple Logo"
+              buttonText="Download for Mac"
             />
           </div>
                <Image
@@ -47,12 +47,12 @@ export default function Home() {
                 priority
               />
       </main>
-      <section>
+      {/* <section>
         dadad
       </section>
       <footer className={styles.footer}>
         dada
-      </footer>
+      </footer> */}
     </>
   )
 }
