@@ -25,10 +25,16 @@ export default function Home() {
             <DownloadButton
               imgUrl="icons/WindowsLogo.svg"
               altText="gelado compressor windowns logo"
-              buttonText="Download for Windows"
+              buttonText="Download for Windows 32bits"
               urlDownload="https://github.com/AbraaoMorais/lp-compressor/raw/main/statics-installers/My%20Nextron%20App%20Setup%201.1.0.exe"
             />
-             <DownloadButton
+            <DownloadButton
+              imgUrl="icons/WindowsLogo.svg"
+              altText="gelado compressor windowns logo"
+              buttonText="Download for Windows 64bits"
+              urlDownload="https://github.com/AbraaoMorais/lp-compressor/raw/main/statics-installers/My%20Nextron%20App%20Setup%201.1.0.exe"
+            />
+             {/* <DownloadButton
               imgUrl="icons/LinuxLogo.svg"
               altText="gelado compressor linux Logo"
               buttonText="Download for Linux"
@@ -37,7 +43,7 @@ export default function Home() {
               imgUrl="icons/AppleLogo.svg"
               altText="gelado compressor apple Logo"
               buttonText="Download for Mac"
-            />
+            /> */}
           </div>
                <Image
                 src="/nodebook-demo.png"
