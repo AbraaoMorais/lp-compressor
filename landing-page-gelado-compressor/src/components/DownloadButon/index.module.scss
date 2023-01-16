@@ -1,4 +1,5 @@
-.buttonDownload{
+.buttonDownload,
+.buttonDisabled{
     width:26vw;
     height:11vh;
     display:flex;
@@ -26,6 +27,25 @@
     }
     &:active{
         background:#0067a3;
+    }
+}
+.buttonDisabled{
+    opacity: 69%;
+    background: #93aab4;
+
+    &:hover{
+        background: #93aab4;
+        transform: scale(1);
+        transition: all 333ms;
+        box-shadow: #000c1d 0px 0px 0px;
+        cursor: default;
+    }
+    &:active{
+        background:#2b2b2b;
+    }
+    img{
+        filter: invert(50%);
+        // filter: opacity(40%);
     }
 }
 

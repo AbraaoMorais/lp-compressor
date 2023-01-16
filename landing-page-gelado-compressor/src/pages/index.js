@@ -34,16 +34,18 @@ export default function Home() {
               buttonText="Download for Windows 64bits"
               urlDownload="https://github.com/AbraaoMorais/lp-compressor/raw/main/statics-installers/My%20Nextron%20App%20Setup%201.1.0.exe"
             />
-             {/* <DownloadButton
+             <DownloadButton
               imgUrl="icons/LinuxLogo.svg"
               altText="gelado compressor linux Logo"
-              buttonText="Download for Linux"
+              buttonText="Linux - coming soon..."
+              buttonInactive={true}
             />
              <DownloadButton
               imgUrl="icons/AppleLogo.svg"
               altText="gelado compressor apple Logo"
-              buttonText="Download for Mac"
-            /> */}
+              buttonText="MacOs - coming soon..."
+              buttonInactive={true}
+            /> 
           </div>
                <Image
                 src="/nodebook-demo.png"

@@ -3,6 +3,7 @@ import styles from '../DownloadButon/index.module.scss'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 
+
 const inter = Inter({
     subsets: ['latin'],
     variable: '--inter-font',
@@ -13,9 +14,9 @@ export default function index(props) {
   return (
    <>
     <button 
-        // style={inter.style}
-        className={styles.buttonDownload + ' ' + inter.variable}
-        onClick={()=> window.open(props.urlDownload,'_blank')}
+        
+        className={(props.buttonInactive ? styles.buttonDisabled : styles.buttonDownload) + " " + inter.variable}
+        onClick={props.buttonInactive ? (e)=> (e) : ()=> window.open(props.urlDownload,'_blank')}
     > 
         <Image
             src={props.imgUrl}
