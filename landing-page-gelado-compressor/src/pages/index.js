@@ -35,6 +35,7 @@ export default function Home() {
               altText="gelado compressor windowns logo"
               buttonText="Download for Windows 64bits"
               urlDownload="https://github.com/AbraaoMorais/lp-compressor/raw/main/statics-installers/My%20Nextron%20App%20Setup%201.1.0.exe"
+              buttonInactive={true}
             />
              <DownloadButton
               imgUrl="icons/LinuxLogo.svg"
