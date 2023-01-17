@@ -29,6 +29,7 @@ export default function Home() {
               altText="gelado compressor windowns logo"
               buttonText="Download for Windows 32bits"
               urlDownload="https://github.com/AbraaoMorais/lp-compressor/raw/main/statics-installers/Gelado%20Compress%20App%20Setup%201.1.0%20-%2032bits.exe"
+              buttonInactive={true}
             />
             <DownloadButton
               imgUrl="icons/WindowsLogo.svg"
